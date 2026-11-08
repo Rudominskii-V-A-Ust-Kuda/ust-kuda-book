@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дело № 175/64</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Подключение Three.js для 3D -->
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+          "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+        }
+      }
+    </script>
+    
+    <!-- Подключение Howler.js для звука -->
+    <script src="https://cdn.jsdelivr.net/npm/howler@2.2.4/dist/howler.min.js"></script>
+</head>
+<body>
+    <div id="canvas-container"></div>
+
+    <div class="ui-panel">
+        <h1>ДЕЛО № 175/64</h1>
+        <p class="hint">Кликните по правой странице, чтобы перелистнуть вперед, по левой — назад. Зажмите ЛКМ и двигайте мышь, чтобы осмотреться.</p>
+        
+        <div class="controls">
+            <label for="volume">Громкость:</label>
+            <input type="range" id="volume" min="0" max="1" step="0.1" value="0.5">
+        </div>
+    </div>
+
+    <script type="module" src="main.js"></script>
+</body>
+</html>
